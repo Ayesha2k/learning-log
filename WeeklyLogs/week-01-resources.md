@@ -6,7 +6,6 @@
 
 - [freeCodeCamp – Git for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk) ★ Super clear!
 - [Git Handbook by GitHub](https://guides.github.com/introduction/git-handbook/)
-- [Codecademy – Learn Git](https://www.codecademy.com/learn/learn-git)
 - [Learn Git Branching Game](https://learngitbranching.js.org/) ★ Visual and fun!
 
 ## 🔍 Exploring GitHub (Where the magic happens)
