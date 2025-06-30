@@ -16,10 +16,31 @@ This file contains notes and practice commands from my Git Basics learning.
 - Git is a **FREE** and **OPEN SOURCE** version control system.
 - Version Control is a way for programmers to **TRACK CODE CHANGES**. Initial version of the document/code is saved on Git and every time the information is updated, it is saved on git. This helps in tracking bugs or rollback to a previous version of the document.
   
-- **Git** vs **Github**
-  Git: Tool for tracking changes in your code overtime.
+- **Git** vs **Github**<br>
+  Git: Tool for tracking changes in your code overtime.<br>
   Github: Website to host your Git repositories, so that you can work online in teams an organise your projects in a portfolio.
+
+- **HTTPS Vs. SSH**
+   - To push changes from your local machine to Github account you have to prove that you are the owner of your account. This is done using **SSH Keys**.
+   - Generate a key locally **ssh-keygen -t rsa -b 4096 -C"ayeshashah0208@gmail.com"**
+   - View keys using **ls ~/.ssh**. Keys with extention **.pub** are public keys that has to be uploaded on your github.
+   - Now each time you need to connect your local machine to Github, you will have the private key to show github that you create the public key.
+   - Copy the public key using **cat ~/.ssh/id_rsa.pub** and paste on GitHub to add SSH key.
+   - Add SSH Key to ssh-agent using below
+       1. eval "$(ssh-agent -s)"
+       2. ssh-add ~/.ssh/id_rsa
+       3. ssh -T git@github.com
   
+| Feature                  | HTTPS                                     | SSH                                          |
+|--------------------------|-------------------------------------------|----------------------------------------------|
+| URL Format               | `https://github.com/user/repo.git`        | `git@github.com:user/repo.git`               |
+| Authentication Method    | GitHub username + Personal Access Token   | SSH key pair (public + private)              |
+| Setup Difficulty         | Easy                                      | Moderate (generate and add SSH key to GitHub)|
+| Prompts for Credentials  | Yes (unless cached)                       | No (once set up)                             |
+| Security Level           | High                                      | Very High                                    |
+| Use Case                 | Beginners, occasional users               | Professionals, automation, frequent users    |
+| Recommended For          | Quick setup, temporary work               | Long-term use, industry standard             |
+
 - **WORKFLOW**
   Adding code in github interface **Vs** Local git workflow
 1. Adding code in github interface
@@ -73,23 +94,31 @@ This file contains notes and practice commands from my Git Basics learning.
 
 ## 💻 Practice Log/ Code Trials
 
-> ✨ Will document what i tried and what i observed.
+- Pulling a remote Repo to your local machine.
+    1. Navigate to the directory where you want to clone your Repo.
+    2. **git clone <SSH key>**
+    3. Move into the newly pulled Repo using **cd <foldername>**
+    4. Make changes to a file
+    5. Check status of all the modified/untracked files that have not been committed yet using **git status**
+    6. Track **all** the files (modified & untracked) using **git add .** or individual file/folder using **git add <filename>**
+    7. **git status**
+    8. Commit changes using **git commit -m"my message title"** or **git commit -m"my message title" -m"additional description"**. This saves changes in your local machine.
+    9. To make the changes live in your remote Github repo use **git push**
+  
 
 ---
 
 ## 🧩 Reflection
 
-- Always run `git status` before committing — it’s your friend 🟢
+- Vs Code Terminal for running git commands.
+- Setting up SSH key.
+- **.git** directory: **heart of every Git repository** - Stores full Git history, branches, config, and commits. If deleted	Your folder becomes a normal folder, no longer a Git repo.
+- 
 
 ---
 ## 2. 📚 Git Handbook by GitHub
 
 ---
-
-## 3. 📚 Codecademy – Learn Git
-
----
-
 ## 4. 📚 Learn Git Branching Game
  
 ---
