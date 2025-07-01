@@ -88,7 +88,13 @@ This file contains notes and practice commands from my Git Basics learning.
 | `commit` | Save your changes into Git |
 | `push` | Upload git commits from your local machine to a remote repository like Github |
 | `pull` | Download changes from a remote repository to your local machine (opposite of **push**) |
-| `status` | gives all files and folders that were updated, created, deleted, but have not been committed yet |
+| `status` | Gives all files and folders that were updated, created, deleted, but have not been committed yet |
+| `init` | Makes a local folder into a **Git repository** by adding a hidden .git folder, which lets Git start tracking changes |
+| `remote` | Just manages the connection between your **local repo** and a **remote repo** — doesn’t copy any code |
+| `branch` | List existing branches, create new branches, and manage (rename, delete, or switch between branches) in your local Git project |
+| `checkout` | Switch to a different branch or restore a specific file version in your project |
+| `diff` | Shows the exact lines of code that have changed between your working directory, staging area, or branches |
+| `merge` | Takes the work done in one branch and adds it into the branch you're currently on |
 
 ---
 
@@ -103,8 +109,35 @@ This file contains notes and practice commands from my Git Basics learning.
     6. Track **all** the files (modified & untracked) using **git add .** or individual file/folder using **git add <filename>**
     7. **git status**
     8. Commit changes using **git commit -m"my message title"** or **git commit -m"my message title" -m"additional description"**. This saves changes in your local machine.
-    9. To make the changes live in your remote Github repo use **git push**
-  
+    9. To make the changes live in your remote Github repo use **git push origin main**
+
+- Starting a Repo locally
+   1. Navigate to the directory that you want to convert to a git Repo.
+   2. **git init**
+   3. **git status**
+   4. **git add .**
+   5. **git status**
+   6. **git commit -m"my message title"**
+   7. Create an empty git Repo on Github (where you will push your local Repo).
+   8. **git remote add origin<SHH Key>**
+   9. **git push origin main**
+
+-Creating a branch
+  1. **git branch**
+  2. **git checkout -b new-branch**	: Creates and switches to a new branch
+  3. **git checkout branch-name**	: Switches to another branch
+  4. **git checkout filename.java** : Restores a file to last committed state
+  5. modify data in new branch
+  6. **git status**
+  7. **git add .**
+  8. **git commit -m"my message title"**
+  9. **git checkout branch-name** --> changes will not be visible here.
+  10. **git diff <branchname>** : Shows the differences between your current branch and the branch named branchname.
+  11. **git checkout branch-name** : the branch you worked on.
+  12. **git push -u origin branch-name** : pushing your branch to remote.
+  13. Creating a **PULL REQUEST**.
+  14. **git pull origin master** : pull changes to your local after merge
+  15. **git branch -d branch-name** : remove the branch after use.
 
 ---
 
@@ -113,7 +146,14 @@ This file contains notes and practice commands from my Git Basics learning.
 - Vs Code Terminal for running git commands.
 - Setting up SSH key.
 - **.git** directory: **heart of every Git repository** - Stores full Git history, branches, config, and commits. If deleted	Your folder becomes a normal folder, no longer a Git repo.
-- 
+- When you clone a GitHub repo, Git automatically names the original source **origin** by default.
+- .gitignore and **git rm --cached Basic_Maths/CountDigits.class**
+- git remote -v
+- * indicates the branch you are currently on.
+- git branch is local by default.
+- **Pull request** : request to pull our code into another branch. e.g. request to pull the code of our branch into the main branch. Therefore make a PR from our branch to main branch
+
+
 
 ---
 ## 2. 📚 Git Handbook by GitHub
