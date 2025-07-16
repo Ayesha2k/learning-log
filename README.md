@@ -17,8 +17,9 @@ I'm exploring:
 | Week | Log | Resources |
 |------|-----|-----------|
 | Week 01 | [Week 01 Log](./WeeklyLogs/week-01.md) | [Week 01 Resources](./WeeklyLogs/week-01-resources.md) |
-| Week 02 | [Week 02 Log](./WeeklyLogs/week-02.md) | [Week 02 Resources](./WeeklyLogs/week-02-resources.md) |
-| Week 03 | [Week 03 Log](./WeeklyLogs/week-02.md) | [Week 03 Resources](./WeeklyLogs/week-02-resources.md) |
+| Week 02 | [Week 02 Log](./WeeklyLogs/week-02.md) | [Week 02 Resources](https://github.com/Ayesha2k/byte_by_byte_DSA) |
+| Week 03 | [Week 03 Log](./WeeklyLogs/week-02.md) | [Week 03 Resources](https://github.com/Ayesha2k/Java_Quest) |
+| Week 04 | Coming soon ... |
 
 ---
 
