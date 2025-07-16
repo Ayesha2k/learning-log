@@ -1,6 +1,6 @@
 # 🌱 Week 02 – Leveling Up with Data Structures & Algorithms ⚙️🧩
 
-![DSA Banner](https://raw.githubusercontent.com/username/assets/main/dsa-banner.png)
+![DSA Motivation](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXpoZWZuZDBxN2V1cWphcXRkY283dWhpMnJ1d2VkaW1hemZmNnMwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fbFPpNgP9WnIGlIQWU/giphy.gif)
 
 ## 🎯 Goals for This Week
 - Kick off my journey into **DSA**
